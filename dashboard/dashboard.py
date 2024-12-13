@@ -5,7 +5,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 # Memuat dataset yang telah dibersihkan dan digabungkan sebelumnya
-df_combined = pd.read_csv('F:\(7) Magang\dicoding\Task_Analisis Data\dashboard\main_data.csv')  # Ganti dengan path file yang sesuai
+df_combined = pd.read_csv('dashboard/main_data.csv')  # Ganti dengan path file yang sesuai
 
 # Judul Aplikasi Streamlit
 st.title('Dashboard Analisis Peminjaman Sepeda')
