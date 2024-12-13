@@ -1,4 +1,4 @@
-﻿altair==5.5.0
+altair==5.5.0
 asttokens==3.0.0
 attrs==24.2.0
 blinker==1.9.0
@@ -40,7 +40,7 @@ matplotlib-inline==0.1.7
 mdurl==0.1.2
 narwhals==1.18.0
 nest-asyncio==1.6.0
-numpy
+numpy>=1.21.2
 packaging==24.2
 pandas==2.2.3
 parso==0.8.4
@@ -58,7 +58,6 @@ pyparsing==3.2.0
 pyproj==3.7.0
 python-dateutil==2.9.0.post0
 pytz==2024.2
-pywin32==308
 pyzmq==26.2.0
 referencing==0.35.1
 requests==2.32.3
