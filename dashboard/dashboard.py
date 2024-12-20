@@ -5,7 +5,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 # Memuat dataset yang telah dibersihkan dan digabungkan sebelumnya
-df_combined = pd.read_csv('dashboard/main_data.csv')  # Ganti dengan path file yang sesuai
+df_combined = pd.read_csv(r'F:\(7) Magang\dicoding\data_analysis_project\dashboard\main_data.csv')  # Ganti dengan path file yang sesuai
 
 # Judul Aplikasi Streamlit
 st.title('Dashboard Analisis Peminjaman Sepeda')
@@ -20,7 +20,9 @@ st.write("""
 # Menambahkan Pilihan Menu untuk Visualisasi
 option = st.sidebar.selectbox(
     'Pilih Visualisasi:',
-    ('Pengaruh Cuaca terhadap Peminjaman Sepeda', 'Pola Peminjaman Sepeda berdasarkan Jam', 'Pola Peminjaman Sepeda berdasarkan Hari dalam Seminggu')
+    ('Pengaruh Cuaca terhadap Peminjaman Sepeda', 
+     'Pola Peminjaman Sepeda berdasarkan Jam', 
+     'Pola Peminjaman Sepeda berdasarkan Hari dalam Seminggu')
 )
 
 # Visualisasi Pengaruh Cuaca terhadap Peminjaman Sepeda
@@ -62,4 +64,3 @@ elif option == 'Pola Peminjaman Sepeda berdasarkan Hari dalam Seminggu':
     plt.ylabel('Rata-rata Jumlah Peminjaman')
     plt.xticks([0, 1, 2, 3, 4, 5, 6], ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'])
     st.pyplot(plt)
-
