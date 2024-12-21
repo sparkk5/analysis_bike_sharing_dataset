@@ -5,7 +5,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 # Memuat dataset yang telah dibersihkan dan digabungkan sebelumnya
-df_combined = pd.read_csv('main_data.csv')
+df_combined = pd.read_csv('.\main_data.csv')
 
 # Pastikan untuk menambahkan kolom 'weekday_day' jika belum ada
 df_combined['weekday_day'] = pd.to_datetime(df_combined['dteday_day']).dt.weekday
